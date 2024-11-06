@@ -1,3 +1,4 @@
+//Given an array arr, return the second largest element from an array. If the second largest element doesn't exist then return -1
 package Array;
 
 public class SecondLargest {
