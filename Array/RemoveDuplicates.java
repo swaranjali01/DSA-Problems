@@ -17,4 +17,13 @@ public class RemoveDuplicates {
         return i + 1;  
     }
 
+    public static void main(String[] args) {
+        int[] nums = {1, 1, 2, 2, 3, 4, 4, 5};  
+        int k = removeDuplicates(nums);
+        System.out.println("Number of unique elements: " + k);
+
+        for (int i = 0; i < k; i++) {
+            System.out.print(nums[i] + " ");
+        }
+    }
 }
