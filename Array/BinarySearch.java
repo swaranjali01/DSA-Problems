@@ -20,5 +20,10 @@ public class BinarySearch {
         return false;  
     }
 
-  
+    public static void main(String[] args) {
+        int[] arr = {1, 2, 3, 4, 5, 6, 7};  
+        int k = 8;  
+
+        System.out.println("Is " + k + " present in the array? " + contains(arr, k));
+    }
 }
