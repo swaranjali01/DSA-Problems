@@ -32,7 +32,13 @@ public class UnionOfSortedArrays {
         }
 
        
-       
+        while (i < a.length) {
+            if (result.isEmpty() || result.get(result.size() - 1) != a[i]) {
+                result.add(a[i]);
+            }
+            i++;
+        }
+
         
     
 
