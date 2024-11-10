@@ -40,7 +40,15 @@ public class UnionOfSortedArrays {
         }
 
         
-    
+        while (j < b.length) {
+            if (result.isEmpty() || result.get(result.size() - 1) != b[j]) {
+                result.add(b[j]);
+            }
+            j++;
+        }
+
+        return result;
+    }
 
 }
 
