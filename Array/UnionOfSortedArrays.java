@@ -50,5 +50,12 @@ public class UnionOfSortedArrays {
         return result;
     }
 
+    public static void main(String[] args) {
+        int[] a = {1, 2, 2, 3, 5};  
+        int[] b = {2, 3, 3, 4, 5, 6}; 
+
+        List<Integer> union = findUnion(a, b);
+        System.out.println("Union of arrays: " + union);
+    }
 }
 
