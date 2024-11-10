@@ -15,6 +15,9 @@ public class MissingNumber {
        
         return expectedSum - actualSum;
     }
-
+    public static void main(String[] args) {
+        int[] nums = {3, 0, 1};  
+        System.out.println("Missing number: " + findMissingNumber(nums));
+    }
     
 }
