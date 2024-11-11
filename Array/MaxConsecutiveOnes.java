@@ -18,4 +18,8 @@ public class MaxConsecutiveOnes {
         return maxCount;
     }
 
+    public static void main(String[] args) {
+        int[] nums = {1, 1, 0, 1, 1, 1};  
+        System.out.println("Maximum number of consecutive 1's: " + findMaxConsecutiveOnes(nums));
+    }
 }
