@@ -11,6 +11,7 @@ public class LongestSubarraySum {
         for (int i = 0; i < arr.length; i++) {
             cumulativeSum += arr[i];
 
+      
             if (cumulativeSum == k) {
                 maxLength = i + 1;
             }
@@ -19,7 +20,6 @@ public class LongestSubarraySum {
                 maxLength = Math.max(maxLength, i - sumIndexMap.get(cumulativeSum - k));
             }
 
-            
             if (!sumIndexMap.containsKey(cumulativeSum)) {
                 sumIndexMap.put(cumulativeSum, i);
             }
@@ -28,4 +28,9 @@ public class LongestSubarraySum {
         return maxLength;
     }
 
+    public static void main(String[] args) {
+        int[] arr = {1, -1, 5, -2, 3};
+        int k = 3; 
+        System.out.println("Length of the longest subarray with sum " + k + ": " + longestSubarrayWithSumK(arr, k));
+    }
 }
