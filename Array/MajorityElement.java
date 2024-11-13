@@ -16,6 +16,9 @@ public class MajorityElement {
         return candidate;
     }
 
-    
+    public static void main(String[] args) {
+        int[] nums = {3, 2, 3};  
+        System.out.println("Majority element: " + findMajorityElement(nums));
+    }
 }
 
