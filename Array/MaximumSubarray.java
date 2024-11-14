@@ -16,4 +16,8 @@ public class MaximumSubarray {
         return maxSoFar;
     }
 
+    public static void main(String[] args) {
+        int[] nums = {-2, 1, -3, -1, 2, 1, -5}; 
+        System.out.println("Maximum subarray sum: " + maxSubArray(nums));
+    }
 }
