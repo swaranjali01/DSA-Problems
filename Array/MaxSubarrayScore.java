@@ -21,7 +21,9 @@ public class MaxSubarrayScore {
                     }
                 }
 
-        
+                 int score = smallest + secondSmallest;
+
+                 maxScore = Math.max(maxScore, score);
             }
         }
 
