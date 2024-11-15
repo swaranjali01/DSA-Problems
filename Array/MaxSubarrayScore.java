@@ -11,6 +11,17 @@ public class MaxSubarrayScore {
                
                 int smallest = Integer.MAX_VALUE;
                 int secondSmallest = Integer.MAX_VALUE;
+
+                for (int k = i; k <= j; k++) {
+                    if (arr[k] < smallest) {
+                        secondSmallest = smallest;
+                        smallest = arr[k];
+                    } else if (arr[k] < secondSmallest) {
+                        secondSmallest = arr[k];
+                    }
+                }
+
+        
             }
         }
 
