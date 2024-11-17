@@ -27,6 +27,14 @@ public class RearrangeArray {
         return result;
     }
 
- 
+    public static void main(String[] args) {
+        int[] nums = {3, 1, -2, -5, 2, -4}; 
+        int[] result = rearrangeArray(nums);
+
+        System.out.print("Rearranged Array: ");
+        for (int num : result) {
+            System.out.print(num + " ");
+        }
+    }
 }
 
