@@ -19,7 +19,10 @@ public class RearrangeArray {
         int[] result = new int[nums.length];
         int index = 0;
 
-      
+        for (int i = 0; i < positive.size(); i++) {
+            result[index++] = positive.get(i); 
+            result[index++] = negative.get(i); 
+        }
 
         return result;
     }
