@@ -16,6 +16,8 @@ public class RearrangeArray {
             }
         }
 
+        int[] result = new int[nums.length];
+        int index = 0;
 
       
 
