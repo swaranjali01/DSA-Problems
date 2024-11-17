@@ -8,7 +8,13 @@ public class RearrangeArray {
         List<Integer> positive = new ArrayList<>();
         List<Integer> negative = new ArrayList<>();
 
-     
+        for (int num : nums) {
+            if (num > 0) {
+                positive.add(num);
+            } else {
+                negative.add(num);
+            }
+        }
 
 
       
