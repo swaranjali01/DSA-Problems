@@ -31,7 +31,17 @@ public class NextPermutation {
         nums[j] = temp;
     }
 
-  
+    private static void reverse(int[] nums, int start, int end) {
+        while (start < end) {
+            swap(nums, start, end);
+            start++;
+            end--;
+        }
+    }
 
-  
+    public static void main(String[] args) {
+        int[] nums = {1, 2, 3}; 
+        nextPermutation(nums);
+        System.out.println("Next permutation: " + Arrays.toString(nums));
+    }
 }
