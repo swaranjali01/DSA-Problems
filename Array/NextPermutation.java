@@ -12,7 +12,17 @@ public class NextPermutation {
             i--;
         }
 
-        
+        if (i >= 0) { 
+  
+            int j = n - 1;
+            while (nums[j] <= nums[i]) {
+                j--;
+            }
+           
+            swap(nums, i, j);
+        }
+
+        reverse(nums, i + 1, n - 1);
     }
 
    
