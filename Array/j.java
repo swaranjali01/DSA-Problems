@@ -12,7 +12,14 @@ public class LeadersInArray {
         int maxFromRight = arr[n - 1];
         leaders.add(maxFromRight);
 
-   
+        for (int i = n - 2; i >= 0; i--) {
+            if (arr[i] >= maxFromRight) {
+                maxFromRight = arr[i];
+                leaders.add(maxFromRight);
+            }
+        }
+
+        Collections.reverse(leaders);
 
         return leaders;
     }
