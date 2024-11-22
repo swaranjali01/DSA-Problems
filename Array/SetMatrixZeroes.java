@@ -17,9 +17,22 @@ public class SetMatrixZeroes {
         }
 
 
+        for (int i = 0; i < m; i++) {
+            if (matrix[i][0] == 0) {
+                zeroFirstCol = true;
+                break;
+            }
+        }
 
        
 
+      
+
+
+    
+    
+
+   
 
 
 }
