@@ -64,6 +64,21 @@ public class SetMatrixZeroes {
         }
     }
 
-   
+    public static void main(String[] args) {
+        int[][] matrix = {
+            {1, 2, 3, 4},
+            {5, 0, 6, 7},
+            {8, 9, 10, 11},
+            {12, 13, 14, 0}
+        };
+
+        System.out.println("Original Matrix:");
+        printMatrix(matrix);
+
+        setZeroes(matrix);
+
+        System.out.println("\nMatrix after setting rows and columns to zero:");
+        printMatrix(matrix);
+    }
 }
 
