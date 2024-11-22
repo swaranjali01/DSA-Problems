@@ -41,9 +41,19 @@ public class SetMatrixZeroes {
             }
         }
 
+        if (zeroFirstRow) {
+            for (int j = 0; j < n; j++) {
+                matrix[0][j] = 0;
+            }
+        }
 
     
-    
+        if (zeroFirstCol) {
+            for (int i = 0; i < m; i++) {
+                matrix[i][0] = 0;
+            }
+        }
+    }
 
    
 
