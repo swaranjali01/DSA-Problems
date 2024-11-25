@@ -27,7 +27,12 @@ public class SpiralMatrix {
             }
             right--; 
 
-         
+            if (top <= bottom) { 
+                for (int i = right; i >= left; i--) {
+                    result.add(matrix[bottom][i]);
+                }
+                bottom--; 
+            }
 
         
         }
