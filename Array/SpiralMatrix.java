@@ -17,7 +17,15 @@ public class SpiralMatrix {
 
         while (top <= bottom && left <= right) {
         
-           
+            for (int i = left; i <= right; i++) {
+                result.add(matrix[top][i]);
+            }
+            top++; 
+
+            for (int i = top; i <= bottom; i++) {
+                result.add(matrix[i][right]);
+            }
+            right--; 
 
          
 
